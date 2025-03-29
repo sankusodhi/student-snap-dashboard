@@ -60,17 +60,17 @@ export const students: Student[] = [
   },
   {
     id: 5,
-    name: 'Vijay Reddy',
+    name: 'jyoti shivhare',
     rollNo: 'BH005',
-    class: '10-B',
-    age: 16,
-    gender: 'Male',
+    class: '6-A',
+    age: 22,
+    gender: 'Female',
     photo: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=800&auto=format&fit=crop',
     attendance: 82,
     performance: 75,
-    contact: '+91 9876543214',
-    address: '567 Shastri Nagar, Hyderabad',
-    description: 'Vijay shows a strong interest in computer science and programming. He has developed several small applications and is always eager to learn new technologies.'
+    contact: '+91 6260401059',
+    address: 'Geedam',
+    description: 'jyoti shows a strong interest in computer science and programming. He has developed several small applications and is always eager to learn new technologies.'
   },
   {
     id: 6,
