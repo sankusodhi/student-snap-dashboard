@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from '@/components/ui/dialog';
 import { Student } from '@/types/student';
+import { Badge } from '@/components/ui/badge';
 
 interface StudentCardProps {
   student: Student;
@@ -9,6 +10,12 @@ interface StudentCardProps {
 
 const StudentCard = ({ student }: StudentCardProps) => {
   const [isOpen, setIsOpen] = useState(false);
+
+  // Function to get bootcamp badge color
+  const getBootcampColor = (bootcamp?: string) => {
+    if (!bootcamp) return "bg-gray-500";
+    return bootcamp.includes("React") ? "bg-blue-500" : "bg-purple-500";
+  };
 
   return (
     <>
@@ -25,7 +32,14 @@ const StudentCard = ({ student }: StudentCardProps) => {
         </div>
         <div className="p-4">
           <h3 className="font-semibold text-white">{student.name}</h3>
-          <p className="text-sm text-gray-400">Roll No: {student.rollNo}</p>
+          <p className="text-sm text-gray-400">{student.module}</p>
+          
+          {student.bootcamp && (
+            <Badge className={`mt-2 ${getBootcampColor(student.bootcamp)}`}>
+              {student.bootcamp}
+            </Badge>
+          )}
+          
           <div className="mt-2 text-xs flex items-center text-gray-300">
             <span className={`inline-block w-2 h-2 rounded-full mr-2 ${
               student.attendance > 80 ? 'bg-green-500' : 
@@ -57,12 +71,12 @@ const StudentCard = ({ student }: StudentCardProps) => {
             <div className="md:col-span-2 space-y-4">
               <div className="grid grid-cols-2 gap-4">
                 <div>
-                  <h4 className="text-sm text-gray-400">Roll Number</h4>
-                  <p>{student.rollNo}</p>
+                  <h4 className="text-sm text-gray-400">Module</h4>
+                  <p>{student.module}</p>
                 </div>
                 <div>
-                  <h4 className="text-sm text-gray-400">Class</h4>
-                  <p>{student.class}</p>
+                  <h4 className="text-sm text-gray-400">English Level</h4>
+                  <p>{student.englishLevel}</p>
                 </div>
                 <div>
                   <h4 className="text-sm text-gray-400">Age</h4>
@@ -72,6 +86,17 @@ const StudentCard = ({ student }: StudentCardProps) => {
                   <h4 className="text-sm text-gray-400">Gender</h4>
                   <p>{student.gender}</p>
                 </div>
+                {student.bootcamp && (
+                  <div>
+                    <h4 className="text-sm text-gray-400">Bootcamp</h4>
+                    <p>{student.bootcamp}</p>
+                  </div>
+                )}
+              </div>
+              
+              <div>
+                <h4 className="text-sm text-gray-400">Email</h4>
+                <p>{student.email}</p>
               </div>
               
               <div>

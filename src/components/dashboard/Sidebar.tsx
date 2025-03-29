@@ -1,7 +1,7 @@
 
 import { useState } from 'react';
 import { cn } from '@/lib/utils';
-import { BookOpen, LayoutDashboard, User, Menu, X } from 'lucide-react';
+import { BookOpen, LayoutDashboard, User, Menu, X, UserCheck } from 'lucide-react';
 import { useIsMobile } from '@/hooks/use-mobile';
 
 const Sidebar = () => {
@@ -18,9 +18,9 @@ const Sidebar = () => {
   };
 
   const sidebarItems = [
-    { icon: LayoutDashboard, label: 'Dashboard', active: true },
-    { icon: User, label: 'Students', active: false },
-    { icon: BookOpen, label: 'Attendance', active: false },
+    { icon: LayoutDashboard, label: 'Dashboard', active: true, path: '/' },
+    { icon: User, label: 'Students', active: false, path: '/students' },
+    { icon: UserCheck, label: 'Attendance', active: false, path: '/attendance' },
   ];
 
   return (
@@ -45,11 +45,16 @@ const Sidebar = () => {
         )}
       >
         <div className="flex items-center justify-between p-4 border-b border-white/10">
-          <h1 className={cn("text-xl font-bold text-white transition-opacity", 
-            collapsed && "opacity-0"
-          )}>
-            Bageshree House
-          </h1>
+          <div className="flex items-center">
+            <div className="w-10 h-10 rounded-full bg-primary flex items-center justify-center mr-2">
+              <span className="text-white font-bold">BH</span>
+            </div>
+            <h1 className={cn("text-xl font-bold text-white transition-opacity", 
+              collapsed && "opacity-0"
+            )}>
+              Bageshree House
+            </h1>
+          </div>
           {!isMobile && (
             <button 
               onClick={toggleSidebar} 
@@ -65,7 +70,7 @@ const Sidebar = () => {
             {sidebarItems.map((item, index) => (
               <li key={index}>
                 <a 
-                  href="#" 
+                  href={item.path}
                   className={cn(
                     "flex items-center p-3 rounded-md transition-all hover:bg-white/10",
                     item.active ? "bg-primary text-white" : "text-gray-300"
@@ -91,7 +96,7 @@ const Sidebar = () => {
             {!collapsed && (
               <div className="ml-3">
                 <p className="text-sm font-medium text-white">Admin</p>
-                <p className="text-xs text-gray-400">Teacher</p>
+                <a href="/admin-login" className="text-xs text-blue-400 hover:underline">Login as Admin</a>
               </div>
             )}
           </div>

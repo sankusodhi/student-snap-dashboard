@@ -2,8 +2,9 @@
 export interface Student {
   id: number;
   name: string;
-  rollNo: string;
-  class: string;
+  module: string;
+  englishLevel: string;
+  email: string;
   age: number;
   gender: string;
   photo: string;
@@ -12,4 +13,5 @@ export interface Student {
   contact: string;
   address: string;
   description: string;
+  bootcamp?: string; // Optional bootcamp field
 }
