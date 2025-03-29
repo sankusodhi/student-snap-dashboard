@@ -32,9 +32,9 @@ export const students: Student[] = [
   },
   {
     id: 3,
-    name: 'Alok Kumar',
+    name: 'Alok Shukla',
     rollNo: 'BH003',
-    class: '10-B',
+    class: '6-B',
     age: 23,
     gender: 'Male',
     photo: '/WhatsApp Image 2025-03-29 at 10.21.45 AM.jpeg',
@@ -42,7 +42,7 @@ export const students: Student[] = [
     performance: 75,
     contact: '+91 9691168456',
     address: 'Bacheli, Dantewada, Chhattisgarh',
-    description: 'Amit has shown a keen interest in sports, particularly cricket. While he needs to improve his academic performance, he has been an asset to the school\'s cricket team.'
+    description: 'He is a passionate and curious learner who enjoys building creative projects using web technologies. He is actively exploring frontend development with React.js and integrating backend services like Google Apps Script & APIs. Alok wants to Become a MERN Stack developer & he also loves to sing.'
   },
   {
     id: 4,
