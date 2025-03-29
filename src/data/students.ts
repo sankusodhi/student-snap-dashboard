@@ -14,7 +14,7 @@ export const students: Student[] = [
     performance: 85,
     contact: '+91 9876543210',
     address: '123 Gandhi Road, Mumbai',
-    description: 'Rahul is an exceptional student who excels in mathematics and science. He has won several awards in the school's science competitions and aims to pursue engineering in the future.'
+    description: 'Rahul is an exceptional student who excels in mathematics and science. He has won several awards in the school\'s science competitions and aims to pursue engineering in the future.'
   },
   {
     id: 2,
@@ -42,7 +42,7 @@ export const students: Student[] = [
     performance: 68,
     contact: '+91 9876543212',
     address: '789 Tagore Lane, Kolkata',
-    description: 'Amit has shown a keen interest in sports, particularly cricket. While he needs to improve his academic performance, he has been an asset to the school's cricket team.'
+    description: 'Amit has shown a keen interest in sports, particularly cricket. While he needs to improve his academic performance, he has been an asset to the school\'s cricket team.'
   },
   {
     id: 4,
@@ -56,7 +56,7 @@ export const students: Student[] = [
     performance: 90,
     contact: '+91 9876543213',
     address: '321 Bose Road, Chennai',
-    description: 'Ananya has consistently been among the top performers in her class. She has a particular aptitude for languages and literature, and actively participates in the school's literary club.'
+    description: 'Ananya has consistently been among the top performers in her class. She has a particular aptitude for languages and literature, and actively participates in the school\'s literary club.'
   },
   {
     id: 5,
