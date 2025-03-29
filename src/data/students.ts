@@ -1,4 +1,3 @@
-
 import { Student } from '@/types/student';
 
 export const students: Student[] = [
@@ -115,7 +114,7 @@ export const students: Student[] = [
     description: '.'
   },
   {
-    id: 8,
+    id: 9,
     name: 'Joga Bashkar',
     rollNo: 'BH008',
     class: '10-A',
@@ -129,7 +128,7 @@ export const students: Student[] = [
     description: '.'
   },
   {
-    id: 8,
+    id: 10,
     name: 'Sanku Sodhi',
     rollNo: 'BH008',
     class: '10-A',
@@ -143,7 +142,7 @@ export const students: Student[] = [
     description: '.'
   },
   {
-    id: 8,
+    id: 11,
     name: 'Sanku Sodhi',
     rollNo: 'BH008',
     class: '10-A',
@@ -157,7 +156,7 @@ export const students: Student[] = [
     description: '.'
   },
   {
-    id: 8,
+    id: 12,
     name: 'Sanku Sodhi',
     rollNo: 'BH008',
     class: '10-A',
@@ -171,7 +170,7 @@ export const students: Student[] = [
     description: '.'
   },
   {
-    id: 8,
+    id: 13,
     name: 'Sanku Sodhi',
     rollNo: 'BH008',
     class: '10-A',
@@ -184,7 +183,7 @@ export const students: Student[] = [
     address: 'Geedam Dantewada',
     description: '.'
   }, {
-    id: 8,
+    id: 14,
     name: 'Sanku Sodhi',
     rollNo: 'BH008',
     class: '10-A',
@@ -198,7 +197,7 @@ export const students: Student[] = [
     description: '.'
   },
   {
-    id: 8,
+    id: 15,
     name: 'Sanku Sodhi',
     rollNo: 'BH008',
     class: '10-A',
@@ -212,7 +211,7 @@ export const students: Student[] = [
     description: '.'
   },
   {
-    id: 8,
+    id: 16,
     name: 'Sanku Sodhi',
     rollNo: 'BH008',
     class: '10-A',
@@ -226,7 +225,7 @@ export const students: Student[] = [
     description: '.'
   },
   {
-    id: 8,
+    id: 17,
     name: 'Sanku Sodhi',
     rollNo: 'BH008',
     class: '10-A',
@@ -240,7 +239,7 @@ export const students: Student[] = [
     description: '.'
   },
   {
-    id: 8,
+    id: 18,
     name: 'Sanku Sodhi',
     rollNo: 'BH008',
     class: '10-A',
@@ -254,7 +253,7 @@ export const students: Student[] = [
     description: '.'
   },
   {
-    id: 8,
+    id: 19,
     name: 'Sanku Sodhi',
     rollNo: 'BH008',
     class: '10-A',
@@ -268,7 +267,7 @@ export const students: Student[] = [
     description: '.'
   },
   {
-    id: 8,
+    id: 20,
     name: 'Sanku Sodhi',
     rollNo: 'BH008',
     class: '10-A',
