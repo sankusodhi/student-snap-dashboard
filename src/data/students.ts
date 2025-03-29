@@ -1,0 +1,117 @@
+
+import { Student } from '@/types/student';
+
+export const students: Student[] = [
+  {
+    id: 1,
+    name: 'Rahul Sharma',
+    rollNo: 'BH001',
+    class: '10-A',
+    age: 16,
+    gender: 'Male',
+    photo: 'https://images.unsplash.com/photo-1600486913747-55e5470d6f40?w=800&auto=format&fit=crop',
+    attendance: 92,
+    performance: 85,
+    contact: '+91 9876543210',
+    address: '123 Gandhi Road, Mumbai',
+    description: 'Rahul is an exceptional student who excels in mathematics and science. He has won several awards in the school's science competitions and aims to pursue engineering in the future.'
+  },
+  {
+    id: 2,
+    name: 'Priya Patel',
+    rollNo: 'BH002',
+    class: '10-A',
+    age: 15,
+    gender: 'Female',
+    photo: 'https://images.unsplash.com/photo-1581403341630-a6e0b9d2d257?w=800&auto=format&fit=crop',
+    attendance: 88,
+    performance: 92,
+    contact: '+91 9876543211',
+    address: '456 Nehru Street, Delhi',
+    description: 'Priya demonstrates excellent communication skills and leadership abilities. She leads the school debate team and has represented the school in various inter-school competitions.'
+  },
+  {
+    id: 3,
+    name: 'Amit Kumar',
+    rollNo: 'BH003',
+    class: '10-B',
+    age: 16,
+    gender: 'Male',
+    photo: 'https://images.unsplash.com/photo-1599566150163-29194dcaad36?w=800&auto=format&fit=crop',
+    attendance: 76,
+    performance: 68,
+    contact: '+91 9876543212',
+    address: '789 Tagore Lane, Kolkata',
+    description: 'Amit has shown a keen interest in sports, particularly cricket. While he needs to improve his academic performance, he has been an asset to the school's cricket team.'
+  },
+  {
+    id: 4,
+    name: 'Ananya Singh',
+    rollNo: 'BH004',
+    class: '10-A',
+    age: 15,
+    gender: 'Female',
+    photo: 'https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=800&auto=format&fit=crop',
+    attendance: 95,
+    performance: 90,
+    contact: '+91 9876543213',
+    address: '321 Bose Road, Chennai',
+    description: 'Ananya has consistently been among the top performers in her class. She has a particular aptitude for languages and literature, and actively participates in the school's literary club.'
+  },
+  {
+    id: 5,
+    name: 'Vijay Reddy',
+    rollNo: 'BH005',
+    class: '10-B',
+    age: 16,
+    gender: 'Male',
+    photo: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=800&auto=format&fit=crop',
+    attendance: 82,
+    performance: 75,
+    contact: '+91 9876543214',
+    address: '567 Shastri Nagar, Hyderabad',
+    description: 'Vijay shows a strong interest in computer science and programming. He has developed several small applications and is always eager to learn new technologies.'
+  },
+  {
+    id: 6,
+    name: 'Sneha Gupta',
+    rollNo: 'BH006',
+    class: '10-C',
+    age: 15,
+    gender: 'Female',
+    photo: 'https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=800&auto=format&fit=crop',
+    attendance: 90,
+    performance: 88,
+    contact: '+91 9876543215',
+    address: '678 Rajiv Avenue, Bangalore',
+    description: 'Sneha has demonstrated exceptional artistic abilities. Her paintings have been displayed in school exhibitions, and she aspires to pursue a career in fine arts.'
+  },
+  {
+    id: 7,
+    name: 'Rohan Joshi',
+    rollNo: 'BH007',
+    class: '10-C',
+    age: 16,
+    gender: 'Male',
+    photo: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&auto=format&fit=crop',
+    attendance: 78,
+    performance: 65,
+    contact: '+91 9876543216',
+    address: '890 Patel Street, Ahmedabad',
+    description: 'Rohan needs to improve his attendance and academic performance. However, he shows great potential in extracurricular activities, particularly in music and playing the guitar.'
+  },
+  {
+    id: 8,
+    name: 'Neha Verma',
+    rollNo: 'BH008',
+    class: '10-A',
+    age: 15,
+    gender: 'Female',
+    photo: 'https://images.unsplash.com/photo-1589571894960-20bbe2828d0a?w=800&auto=format&fit=crop',
+    attendance: 93,
+    performance: 86,
+    contact: '+91 9876543217',
+    address: '901 Subhash Road, Pune',
+    description: 'Neha is a diligent student who participates actively in class discussions. She demonstrates strong analytical skills and has shown particular interest in social sciences.'
+  }
+];
